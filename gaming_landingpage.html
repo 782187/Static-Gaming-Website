@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: aliceblue;
+        }
+
+        #form {
+            margin-left: auto;
+        }
+
+        #form input {
+            outline: none;
+            border-radius: 15px;
+            border: 2px solid transparent;
+            animation: search 2s linear infinite;
+        }
+
+        #form input::placeholder {
+            color: red;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        @keyframes search {
+            0% {
+                border: 5px solid blue;
+            }
+
+            30% {
+                border: 5px solid red;
+            }
+
+            60% {
+                border: 5px solid lime;
+            }
+
+            100% {
+                border: 5px solid indianred;
+            }
+        }
+
+        .nav-link {
+            color: aliceblue;
+            margin: 2px 10px;
+        }
+
+        .nav-link:hover {
+            color: red;
+        }
+
+        #sticker {
+            animation: stick 3s linear infinite;
+        }
+
+        @keyframes stick {
+            0% {
+                filter: drop-shadow(2px 5px 50px blue);
+                transform: rotate(-50deg);
+            }
+
+            50% {
+                filter: drop-shadow(2px 5px 50px lime);
+                transform: rotate(-5deg);
+            }
+
+            100% {
+                filter: drop-shadow(2px 5px 50px blue);
+                transform: rotate(-50deg);
+            }
+        }
+
+        nav {
+            border: 2px solid rgb(32, 31, 31);
+            border-radius: 15px;
+        }
+
+        #contactus {
+            border: 2px solid red;
+            border-radius: 90px;
+        }
+
+        .mb-3 {
+            margin-top: 3em;
+        }
+
+        .changecolor {
+            -webkit-background-clip: text;
+            background-clip: text;
+            background-image: linear-gradient(45deg, rgb(255, 0, 0), rgb(25, 0, 255));
+            color: transparent;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <marquee direction="right">
+        <h5 style="font-weight: bold;">Wellcome To Game<span class="text-danger">Stop</span></h5>
+    </marquee>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="home" style="background-color: rgb(0, 0, 0);">
+        <a class="navbar-brand" style="color: white;" href="#">Game<span class="text-danger">Stop</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutus">AboutUs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#games">Games</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <form id="form" style="display: flex;margin-right: 1em;">
+                <input style="width: 300px;" type="search" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" style="background-color: black;"
+                    type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+                <h2 class="changecolor"
+                    style="z-index: 1;text-align: center;top: 100px;position: absolute;left: 500px;">
+                    <div>Wellcome To Gaming Industry</div>
+                    <p>Online site to purchase Gaming Card</p>
+                    <p></p>
+                </h2>
+                <div class="carousel-item active">
+                    <img src="images/carousel/i1.jpeg" height="620px" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel/i2.jpeg" height="620px" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel/i4.jpeg" height="620px" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section id="aboutus">
+        <div class="container text-center" style="margin-top: 80px;">
+            <h1 class="display-3" style="margin-bottom: 70px;">About <span class="text-danger">Us</span></h1>
+            <div class="row">
+                <div class="col-md-4 col-12 text-center">
+                    <img id="sticker" style="filter: drop-shadow(2px 5px 50px black);" src="images/carousel/sticker.png"
+                        height="450px" width="300px" class="rounded mx-auto d-block img-fluid" alt="...">
+                </div>
+                <div class="col-md-8 col-12">
+                    <figure>
+                        <blockquote class="blockquote">
+                            <p style="text-align: justify;">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit. Placeat alias sequi laboriosam, vero ex ad corporis veritatis cumque quae nemo
+                                atque repudiandae pariatur aliquam, in accusantium quis eum blanditiis animi ab ipsum
+                                illum? Provident impedit quibusdam voluptatibus voluptas sit sapiente cupiditate neque
+                                consequuntur nemo iure ratione, minus distinctio est fugiat nihil at. Accusantium dolore
+                                consequatur quam reiciendis, nihil expedita dignissimos assumenda debitis corrupti
+                                recusandae necessitatibus alias quo commodi, soluta eos doloremque? Sunt adipisci unde
+                                quidem dolorum voluptatem accusantium exercitationem, expedita mollitia iure ipsum
+                                consequatur repudiandae nobis, pariatur nulla iste ex commodi perspiciatis. Lorem ipsum
+                                dolor sit amet consectetur adipisicing elit. Numquam voluptatibus, necessitatibus culpa
+                                deserunt at possimus eos dicta. Voluptates ad veritatis ut pariatur beatae rerum id,
+                                laboriosam praesentium est natus fuga deleniti. Possimus quod deleniti, impedit dolor
+                                totam sapiente ab voluptatibus rerum natus ratione culpa molestiae illo minus ipsa quo
+                                corporis!
+                            </p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer" style="margin-top: 5px;">
+                            Someone famous in <cite title="Source Title">Gaming Industry</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="games">
+        <div class="container text-center" style="margin-top: 80px;">
+            <h1 class="display-3" style="margin-bottom: 70px;">All <span class="text-danger">Games</span></h1>
+            <div class="row" style="place-items: center;">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 d-flex justify-content-center">
+                    <div class="card text-bg-light" style="width: 18rem;">
+                        <img height="160px" src="images/carousel/images1.jpg" class="card-img-top mx-auto d-block"
+                            alt="Assassian Creed">
+                        <div class="card-body">
+                            <h5 class="card-title">Assassian Creed</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-danger">Click Me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 d-flex justify-content-center">
+                    <div class="card text-bg-light" style="width: 18rem;">
+                        <img height="160px" src="images/carousel/images2.jpeg" class="card-img-top mx-auto d-block"
+                            alt="Transformer">
+                        <div class="card-body">
+                            <h5 class="card-title">Transformer</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-danger">Click Me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 d-flex justify-content-center">
+                    <div class="card text-bg-light" style="width: 18rem;">
+                        <img height="160px" src="images/carousel/fortnite.jpeg" class="card-img-top mx-auto d-block"
+                            alt="Fort Nite">
+                        <div class="card-body">
+                            <h5 class="card-title">Fort Nite</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-danger">Click Me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 d-flex justify-content-center">
+                    <div class="card text-bg-light" style="width: 18rem;">
+                        <img height="160px" src="images/carousel/images4.jpeg" class="card-img-top mx-auto d-block"
+                            alt="The Wolf">
+                        <div class="card-body">
+                            <h5 class="card-title">The Wolf</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-danger">Click Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="container text-center" style="margin-top: 80px;">
+            <h1 class="display-3" style="margin-bottom: 70px;">Contact <span class="text-danger">Us</span></h1>
+            <div class="row align-items-center justify-content-center" id="contactus"
+                style="margin-bottom: 50px; width: 100%; margin: auto;">
+                <div class="col-lg-6 col-md-8 col-sm-12" style="margin: 30px 0;">
+                    <form id="form1">
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6 form-floating">
+                                <input type="text" id="fnames" class="form-control" placeholder="First name"
+                                    aria-label="First name">
+                                <label for="fnames" style="color: blue;">First name</label>
+                            </div>
+                            <div class="col-md-6 form-floating">
+                                <input type="text" class="form-control" id="lname" placeholder="Last name"
+                                    aria-label="Last name">
+                                <label for="lname" style="color: blue;">Last name</label>
+                            </div>
+                        </div>
+                        <div class="mb-3 form-floating">
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Email">
+                            <label for="exampleInputEmail1" style="color: blue;">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                style="height: 100px"></textarea>
+                            <label for="floatingTextarea2" style="color: blue;">Comments</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="margin-top: 20px;">Submit</button>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-md-8 col-sm-12">
+                    <img src="images/carousel/con.avif" class="rounded mx-auto d-block img-fluid" alt="Contact Us Image"
+                        style="width: 80%; height: auto;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer" style="margin-top: 80px;">
+        <div class="container-fluid">
+            <footer class="text-center text-lg-start text-white" style="background-color: #212122">
+                <div class="container p-4 pb-0">
+                    <section class="">
+                        <div class="row">
+                            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">
+                                    Company name
+                                </h6>
+                                <p>
+                                    Here you can use rows and columns to organize your footer
+                                    content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit.
+                                </p>
+                            </div>
+
+                            <hr class="w-100 clearfix d-md-none" />
+
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                                <p>
+                                    <i class="bi bi-windows"></i> Windows
+                                </p>
+                                <p>
+                                    <i class="bi bi-windows"></i> PlayStation
+                                </p>
+                                <p>
+                                    <i class="bi bi-xbox"></i> X-Box
+                                </p>
+                                <p>
+                                    <i class="bi bi-android"></i> Android
+                                </p>
+                            </div>
+
+                            <hr class="w-100 clearfix d-md-none" />
+
+                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">
+                                    Useful links
+                                </h6>
+                                <p>
+                                    <a class="text-white">Account</a>
+                                </p>
+                                <p>
+                                    <a class="text-white">Game</a>
+                                </p>
+                                <p>
+                                    <a class="text-white">Game Card Rates</a>
+                                </p>
+                                <p>
+                                    <a class="text-white">Help</a>
+                                </p>
+                            </div>
+
+                            <hr class="w-100 clearfix d-md-none" />
+
+                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                                <p><i class="fas fa-home mr-3"></i> Nashik,Maharashtra,India</p>
+                                <p><i class="fas fa-envelope mr-3"></i> gamestope@gmail.com</p>
+                                <p><i class="fas fa-phone mr-3"></i> + 91 234 567 88</p>
+                                <p><i class="fas fa-print mr-3"></i> + 91 234 567 89</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr class="my-3">
+
+                    <section class="p-3 pt-0">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-7 col-lg-8 text-center text-md-start">
+                                <div class="p-3">
+                                    <span>&copy;</span> 2020 Copyright:
+                                    <a class="text-white" href="#">Game<span class="text-danger">Stop</span></a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                                <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"
+                                    href="https://www.facebook.com"><i class="bi bi-facebook"></i></a>
+                                <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"
+                                    href="https://www.twitter.com"><i class="bi bi-twitter"></i></a>
+                                <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"
+                                    href="https://www.google.com"><i class="bi bi-google"></i></a>
+                                <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"
+                                    href="https://www.whatsapp.com"><i class="bi bi-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+</body>
+
+</html>
